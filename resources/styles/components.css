@@ -80,8 +80,20 @@
 }
 
 .grid--tight {
-    display: grid;
     gap: 0;
+}
+
+.grid--start {
+    align-content: start;
+}
+
+.grid__hero--center {
+    grid-template-columns: .85fr;
+    justify-content: center;
+}
+
+.grid__hero--left {
+    grid-template-columns: 2fr 1fr;
 }
 
 /* Desktop defaults */
@@ -115,6 +127,11 @@
 
 .card--centered {
     text-align: center;
+    align-content: center;
+}
+
+/* .card--centered {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,14 +144,19 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 5rem;
-}
+} */
 
 .card:hover {
     border-color: var(--color-surface);
 }
 
-.card-highlight:hover {
+.is-mouseover:hover {
     transform: translateY(-4px);
+    border-color: var(--color-accent);
+}
+
+.card[aria-selected='true'] {
+    transform: none;
     border-color: var(--color-accent);
 }
 
@@ -195,6 +217,25 @@
     margin: 0;
 }
 
+.card--media-right {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    column-gap: 1rem;
+    row-gap: 0.35rem;
+    align-items: start;
+}
+
+.card--media-right .card__icon {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+}
+
+.card--media-right .card__title,
+.card--media-right .card__text {
+    margin: 0;
+    grid-column: 1;
+}
+
 /* =========================
    Responsive (Scale Down)
 ========================= */
@@ -207,9 +248,21 @@
     .grid--3 {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .grid__hero--left {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 640px) {
+
+    .grid__hero--center {
+        grid-template-columns: 1fr;
+    }
 
     .grid--2,
     .grid--3,
@@ -224,10 +277,6 @@
     .section__header--page .section__subtitle {
         max-width: 85%;
         justify-self: center;
-    }
-
-    .card {
-        padding: 1.5rem;
     }
 
     .card--middle {

@@ -217,3 +217,35 @@ Toast notifications
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 1023px) {
+    .card:has(form) {
+        padding: 0.5rem;
+        display: grid;
+        align-content: space-evenly;
+    }
+
+    .form__field {
+        font-size: .9rem;
+    }
+
+    .form__field input, .form__field div  {
+        padding: 0.5rem 0.65rem;
+    }
+
+    .form__field.checkbox input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .form__field.checkbox input::before {
+        width: 9px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .card:has(form) {
+        padding: 1.5rem 1rem;
+    }
+}

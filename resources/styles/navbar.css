@@ -1,9 +1,13 @@
 /* ===== BASE (DESKTOP DEFAULT) ===== */
 
-.nav {
-    width: 100%;
-    background-color: rgba(0,0,0,0.8);
-    position: relative;
+#navbar {
+    background: rgba(5, 8, 10, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(61, 174, 69, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
 }
 
@@ -16,6 +20,10 @@
     align-items: center;
     gap: 2rem;
     box-sizing: border-box;
+}
+
+.page__home .nav {
+    background: rgba(0, 0, 0, 0.75);
 }
 
 /* ===== BRAND ===== */

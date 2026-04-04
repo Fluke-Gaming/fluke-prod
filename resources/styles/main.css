@@ -51,7 +51,14 @@ body.site {
     font-family: "Toxigenesis", "Open Sans", sans-serif;
 }
 
+button {
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+}
+
 .site__main {
+    padding-top: 60px;
     flex: 1;
 }
 
@@ -102,6 +109,10 @@ a {
 .is-disabled {
     opacity: 0.6;
     pointer-events: none;
+}
+
+.is-link {
+    cursor: pointer;
 }
 
 /* ===== Hero Block ===== */

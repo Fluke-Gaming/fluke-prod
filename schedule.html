@@ -17,7 +17,7 @@
 </head>
 
 <body class="site">
-  <div id="navbar"></div>
+  <header id="navbar"></header>
 
   <main class="site__main">
 
@@ -31,15 +31,76 @@
       </div>
     </section>
 
-    <!-- Raid Types -->
+    <!-- Calendar Feed -->
     <section class="section">
       <div class="container">
+
         <div class="grid grid--2">
           <div id="calendar" class="grid"></div>
           <div class="card card__mood">
             <h2>Upcoming Events</h2>
           </div>
         </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <header class="section__header">
+          <h2 class="section__title">Live Streaming</h2>
+        </header>
+
+        <!-- Stream Embed -->
+        <div class="grid grid__hero--left">
+          <div class="card card__stream">
+            <div id="stream-player"></div>
+          </div>
+
+          <div class="grid grid--start">
+            <!-- Twitch Selector -->
+            <button class="card card--media-right is-mouseover" role="tab" id="tab-flukeTTV">
+              <div class="card__icon">
+                <!-- Twitch SVG -->
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+                </svg>
+              </div>
+              <h3 class="card__title">Twitch</h3>
+              <p class="card__text grid--skip-first">
+                Watch Fluke Gaming on Twitch.</p>
+              </button>
+            <!-- YouTube Selector -->
+            <button class="card card--media-right is-mouseover is-disabled" role="tab" id="tab-flukeYT">
+              <div class="card__icon">
+                <!-- YouTube SVG -->
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </div>
+              <h3 class="card__title">YouTube</h3>
+              <p class="card__text grid--skip-first">
+                Watch Fluke Gaming on YouTube (soon).</p>
+              </button>
+            <!-- Extra Selector -->
+            <button class="card card--media-right is-mouseover is-remainder is-disabled" role="tab">
+              <div class="card__icon">
+                <!-- Play Button SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.88">
+                  <path fill-rule="evenodd"
+                    d="M61.44 0c33.93 0 61.44 27.51 61.44 61.44s-27.51 61.44-61.44 61.44S0 95.37 0 61.44 27.51 0 61.44 0m21.87 65.24c3.13-2.02 3.12-4.27 0-6.06L50.98 40.6c-2.55-1.6-5.21-.66-5.14 2.67l.1 37.55c.22 3.61 2.28 4.6 5.32 2.93zM61.44 12.48c27.04 0 48.96 21.92 48.96 48.96S88.48 110.4 61.44 110.4 12.48 88.48 12.48 61.44 34.4 12.48 61.44 12.48"/>
+                </svg>
+              </div>
+              <h3 class="card__title">Community</h3>
+              <p class="card__text grid--skip-first">
+                [Your stream can go here!]</p>
+              </button>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -50,6 +111,8 @@
   <script src="/resources/scripts/navbar.js" defer></script>
   <script src="/resources/scripts/footer.js" defer></script>
   <script src="/resources/scripts/calendar.js" defer></script>
+  <script src="/resources/scripts/streams.js" defer></script>
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </body>
 
 </html>

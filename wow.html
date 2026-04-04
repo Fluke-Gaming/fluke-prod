@@ -17,7 +17,7 @@
 </head>
 
 <body class="site">
-  <div id="navbar"></div>
+  <header id="navbar"></header>
 
   <main class="site__main">
 
@@ -163,7 +163,7 @@
 
             <form class="form" id="raidform">
               <input name="season" type="hidden" value="MNS1" required />
-              <div class="grid--tight grid--2">
+              <div class="grid grid--tight grid--2">
                 <div class="form__field">
                   <input name="character" placeholder="Name" autocomplete="fluke-gaming charactername" autocapitalize="none" spellcheck="false" />
                 </div>
@@ -237,50 +237,52 @@
           <!-- Sidebar -->
           <div class="grid">
 
-            <a href="https://docs.google.com/spreadsheets/d/1m5_nQY1-V4BOcTjD71qdwmV2lE-RGEUlPAz7vAzlQXo/edit?gid=0#gid=0" target="_blank">
-              <article class="card card--middle card-highlight">
+            <div class="grid grid__hero--center">
+              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
+                data-href="https://docs.google.com/spreadsheets/d/1m5_nQY1-V4BOcTjD71qdwmV2lE-RGEUlPAz7vAzlQXo/edit?gid=0"
+              >
                 <h3 class="card__title u-accent">Signup Sheet</h3>
                 <p class="card__text">
                   View the current signups and raid roster.</p>
               </article>
-            </a>
+            </div>
 
             <header class="section__subheader">
               <h2 class="section__title">Guides & Resources</h2>
             </header>
 
             <div class="grid grid--2">
-              <a href="https://www.mythictrap.com/en#bossStrategies" target="_blank">
-                <article class="card card--centered card-highlight">
-                  <h4 class="card__title u-accent">Boss Guides</h4>
-                  <p class="card__text--small">
-                    Mythic Trap offers concise boss strategies with clear visuals for every encounter.</p>
-                </article>
-              </a>
+              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
+                data-href="https://www.mythictrap.com/en#bossStrategies"
+              >
+                <h4 class="card__title u-accent">Boss Guides</h4>
+                <p class="card__text--small">
+                  Mythic Trap offers concise boss strategies with clear visuals for every encounter.</p>
+              </article>
 
-              <a href="https://www.icy-veins.com/wow/class-guides" target="_blank">
-                <article class="card card--centered card-highlight">
-                  <h4 class="card__title u-accent">Class Guides</h4>
-                  <p class="card__text--small">
-                    Icy Veins provides comprehensive class guides covering talents, rotations, and gear.</p>
-                </article>
-              </a>
+              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
+                data-href="https://www.icy-veins.com/wow/class-guides"
+              >
+                <h4 class="card__title u-accent">Class Guides</h4>
+                <p class="card__text--small">
+                  Icy Veins provides comprehensive class guides covering talents, rotations, and gear.</p>
+              </article>
 
-              <a href="https://www.wowhead.com/guides/dungeons" target="_blank">
-                <article class="card card--centered card-highlight">
-                  <h4 class="card__title u-accent">Dungeon Guides</h4>
-                  <p class="card__text--small">
-                    Wowhead features detailed dungeon guides with pull maps, interrupts, and video walkthroughs.</p>
-                </article>
-              </a>
+              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
+                data-href="https://www.wowhead.com/guides/dungeons"
+              >
+                <h4 class="card__title u-accent">Dungeon Guides</h4>
+                <p class="card__text--small">
+                  Wowhead features detailed dungeon guides with pull maps, interrupts, and video walkthroughs.</p>
+              </article>
 
-              <a href="https://www.method.gg/guides#mythic-plus-guides" target="_blank">
-                <article class="card card--centered card-highlight">
-                  <h4 class="card__title u-accent">Mythic+ Guides</h4>
-                  <p class="card__text--small">
-                    Method delivers precise Mythic+ guides covering affixes, timers, and optimized routes.</p>
-                </article>
-              </a>
+              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
+                data-href="https://www.method.gg/guides#mythic-plus-guides"
+              >
+                <h4 class="card__title u-accent">Mythic+ Guides</h4>
+                <p class="card__text--small">
+                  Method delivers precise Mythic+ guides covering affixes, timers, and optimized routes.</p>
+              </article>
             </div>
 
           </div>
@@ -296,6 +298,7 @@
 
   <script src="/resources/scripts/navbar.js" defer></script>
   <script src="/resources/scripts/footer.js" defer></script>
+  <script src="/resources/scripts/misc.js" defer></script>
   <script src="/resources/scripts/raid-form.js" defer></script>
 </body>
 

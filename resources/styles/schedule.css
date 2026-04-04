@@ -83,6 +83,25 @@
 }
 
 /* =========================
+   Stream Embed
+========================= */
+
+.card__stream {
+    padding: 0;
+    overflow: hidden;
+
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.card__stream iframe, .card__stream div {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* =========================
    Responsive (Scale Down)
 ========================= */
 
@@ -106,6 +125,20 @@
 
     .card__mood {
         order: -1;
+    }
+
+    .grid__hero--left .grid--start {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid__hero--left .grid--start button {
+        flex: 1 1 45%;
+    }
+
+    .grid__hero--left .grid--start .is-remainder {
+        flex: 0 1 45%;
     }
 }
 
@@ -142,6 +175,20 @@
 
     .card__text--date-join::before {
         content: "";
+    }
+
+    .grid__hero--left .grid--start {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .grid__hero--left .grid--start button {
+        flex: 1 1 45%;
+    }
+
+    .grid__hero--left .grid--start .is-remainder {
+        flex: 0 1 45%;
     }
 }
 
