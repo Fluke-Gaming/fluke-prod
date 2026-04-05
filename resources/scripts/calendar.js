@@ -60,7 +60,7 @@ async function loadEvents() {
         }
       ];
     } else {
-      const res = await fetch('https://calendar-proxy.flukegaming57.workers.dev');
+      const res = await fetch('https://google-calendar.flukegaming57.workers.dev');
       events = await res.json();
     }
 

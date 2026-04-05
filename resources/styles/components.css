@@ -96,6 +96,10 @@
     grid-template-columns: 2fr 1fr;
 }
 
+.grid__hero--right {
+    grid-template-columns: 1fr 2fr;
+}
+
 /* Desktop defaults */
 .grid--2 {
     grid-template-columns: repeat(2, 1fr);
@@ -130,21 +134,14 @@
     align-content: center;
 }
 
-/* .card--centered {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+.card--gutter {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
-.card--middle {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 5rem;
-} */
+.card--dark {
+    background: var(--color-background);
+}
 
 .card:hover {
     border-color: var(--color-surface);
@@ -249,6 +246,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .grid--3 .is-remainder {
+        grid-column: 1 / span 2;
+        max-width: calc(50% - 0.625rem);
+        margin: 0 auto;
+    }
+
     .grid__hero--left {
         grid-template-columns: 1fr;
     }
@@ -268,6 +271,12 @@
     .grid--3,
     .grid--4 {
         grid-template-columns: 1fr;
+    }
+
+    .grid--3 .is-remainder {
+        grid-column: inherit;
+        max-width: inherit;
+        margin: inherit;
     }
 
     .section__title {

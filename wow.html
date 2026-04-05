@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/resources/styles/main.css">
   <link rel="stylesheet" href="/resources/styles/components.css">
   <link rel="stylesheet" href="/resources/styles/raid-form.css">
+  <link rel="stylesheet" href="/resources/styles/raid-stats.css">
   <link rel="stylesheet" href="/resources/styles/navbar.css">
   <link rel="stylesheet" href="/resources/styles/footer.css">
 </head>
@@ -26,32 +27,57 @@
       <div class="container">
         <header class="section__header--page">
           <h1 class="section__title">World of Warcraft</h1>
-          <p class="section__subtitle">Raiding progression, heroic requirements, and signup sheet.</p>
+          <p class="section__subtitle">WoW resources, raiding progression, and signup sheet.</p>
         </header>
+      </div>
+    </section>
+
+    <!-- WoW Content -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3">
+          <article class="card">
+            <h3 class="card__title u-accent">Mythic+ Keys</h3>
+            <p class="card__text">
+              On weeknights and weekends, we frequently group up to push keystone dungeons.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title u-accent">AOTC Raids</h3>
+            <p class="card__text">
+              Each season, we progress through normal and then heroic raid until we get AOTC.</p>
+          </article>
+
+          <article class="card is-remainder">
+            <h3 class="card__title u-accent">PvP</h3>
+            <p class="card__text">
+              Most of our guild focuses on PvE content, but some players do battlegrounds and arenas.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- Raid Types -->
     <section class="section">
       <div class="container">
-        <div class="grid grid--3">
-          <article class="card">
+
+        <header class="section__header">
+          <h2 class="section__title">Seasonal Raiding</h2>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card card--dark">
             <h3 class="card__title">Normal Raid</h3>
             <p class="card__text">
               Normal raids are open to all members. At the beginning of each season, we learn the fights on normal and progress through the raid until most players no longer need normal boss loot.</p>
           </article>
 
-          <article class="card">
+          <article class="card card--dark">
             <h3 class="card__title">Heroic Raid</h3>
             <p class="card__text">
-              Heroic raids are for experienced players who are competent with raid mechanics and their roles on the team. Each season, we complete the Heroic raid and earn AOTC as a guild.</p>
+              Heroic raids require a minimum level of performance, though we try to include everyone who wants to join. If progession stalls, we may update the raid roster so the guild can complete AOTC.</p>
           </article>
 
-          <article class="card">
-            <h3 class="card__title">Normal Raid (Farm)</h3>
-            <p class="card__text">
-              Once we move on to Heroic progression, we often dedicate a second night to continue farming Normal raid. Alts and new players are welcome to join us in a more casual setting.</p>
-          </article>
         </div>
       </div>
     </section>
@@ -61,7 +87,7 @@
       <div class="container">
 
         <header class="section__header">
-          <h2 class="section__title">Heroic Raiding Requirements</h2>
+          <h2 class="section__title">Heroic Requirements</h2>
         </header>
 
         <div class="grid grid--3">
@@ -148,18 +174,52 @@
       </div>
     </section>
 
-    <!-- Signup + Resources -->
+
+    <!-- Loot Rules -->
     <section class="section">
       <div class="container">
 
+        <header class="section__header">
+          <h2 class="section__title">Raid Looting</h2>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3 class="card__title u-accent">Main Priority</h3>
+            <p class="card__text">
+              We prioritize main characters for loot. Geared alts are welcome, but defer upgrades to players on their mains.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title u-accent">Offspec Rolls</h3>
+            <p class="card__text">
+              We set our main spec for loot preference. Offspec rolls are fine; the game handles priority automatically.</p>
+          </article>
+
+          <article class="card is-remainder">
+            <h3 class="card__title u-accent">Upgrade Focus</h3>
+            <p class="card__text">
+              We want everyone to get 4-set ASAP. Use need for upgrades you'll equip immediately, and greed for 'maybe' items.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup + Raid Stats -->
+    <section class="section">
+      <div class="container">
+
+        <header class="section__header">
+          <h2 class="section__title">Signup Form</h2>
+        </header>
+
         <div class="grid grid--2">
-
           <!-- Signup -->
-          <article class="card card--centered">
-
-            <h2 class="card__title">Raid Signup</h2>
-            <p class="card__text card__text--narrow">
-              Raiding every <span id="raidtime" class="u-accent"></span>. Sign up below to add your name to the roster.</p>
+          <div class="card card--centered">
+            <article class="grid grid__hero--center">
+              <p class="card--centered">
+                Raiding every <span id="raidtime" class="u-accent"></span>. Submit here to add your character to the roster. Resubmit to make updates.</p>
+            </article>
 
             <form class="form" id="raidform">
               <input name="season" type="hidden" value="MNS1" required />
@@ -232,61 +292,69 @@
 
             <div id="toast-container" class="toast-container"></div>
 
-          </article>
-
-          <!-- Sidebar -->
-          <div class="grid">
-
-            <div class="grid grid__hero--center">
-              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
-                data-href="https://docs.google.com/spreadsheets/d/1m5_nQY1-V4BOcTjD71qdwmV2lE-RGEUlPAz7vAzlQXo/edit?gid=0"
-              >
-                <h3 class="card__title u-accent">Signup Sheet</h3>
-                <p class="card__text">
-                  View the current signups and raid roster.</p>
-              </article>
-            </div>
-
-            <header class="section__subheader">
-              <h2 class="section__title">Guides & Resources</h2>
-            </header>
-
-            <div class="grid grid--2">
-              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
-                data-href="https://www.mythictrap.com/en#bossStrategies"
-              >
-                <h4 class="card__title u-accent">Boss Guides</h4>
-                <p class="card__text--small">
-                  Mythic Trap offers concise boss strategies with clear visuals for every encounter.</p>
-              </article>
-
-              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
-                data-href="https://www.icy-veins.com/wow/class-guides"
-              >
-                <h4 class="card__title u-accent">Class Guides</h4>
-                <p class="card__text--small">
-                  Icy Veins provides comprehensive class guides covering talents, rotations, and gear.</p>
-              </article>
-
-              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
-                data-href="https://www.wowhead.com/guides/dungeons"
-              >
-                <h4 class="card__title u-accent">Dungeon Guides</h4>
-                <p class="card__text--small">
-                  Wowhead features detailed dungeon guides with pull maps, interrupts, and video walkthroughs.</p>
-              </article>
-
-              <article class="card card--centered is-link is-mouseover" role="link" tabindex="0"
-                data-href="https://www.method.gg/guides#mythic-plus-guides"
-              >
-                <h4 class="card__title u-accent">Mythic+ Guides</h4>
-                <p class="card__text--small">
-                  Method delivers precise Mythic+ guides covering affixes, timers, and optimized routes.</p>
-              </article>
-            </div>
-
           </div>
 
+          <div class="grid">
+            <!-- Roster - Google Sheet -->
+            <article class="card card--centered card--dark is-link is-mouseover" role="link" tabindex="0"
+              data-href="https://docs.google.com/spreadsheets/d/1m5_nQY1-V4BOcTjD71qdwmV2lE-RGEUlPAz7vAzlQXo/edit?gid=0">
+              <h3 class="card__title u-accent">Signup Sheet</h3>
+              <p class="card__text">
+                Click to see current signups and raid roster.</p>
+            </article>
+            <!-- Raider.IO -->
+            <article id="fluke-raiderio" class="grid card card--centered card--dark is-link is-mouseover" role="link" tabindex="0"
+              data-href="https://raider.io/guilds/us/frostmane/Fluke"></article>
+            <!-- Warcraft Logs -->
+            <article id="fluke-warcraftlogs" class="grid card card--centered card--dark is-link is-mouseover" role="link" tabindex="0"
+              data-href="https://www.warcraftlogs.com/guild/reports-list/570091"></article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WoW Resources -->
+    <section class="section">
+      <div class="container">
+
+        <header class="section__header">
+          <h2 class="section__title">Guides & Resources</h2>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card card--gutter card--centered is-link is-mouseover" role="link" tabindex="0"
+            data-href="https://www.mythictrap.com/en#bossStrategies"
+          >
+            <h4 class="card__title u-accent">Boss Guides</h4>
+            <p class="card__text">
+              Mythic Trap offers concise boss strategies with clear visuals for every encounter.</p>
+          </article>
+
+          <article class="card card--gutter card--centered is-link is-mouseover" role="link" tabindex="0"
+            data-href="https://www.icy-veins.com/wow/class-guides"
+          >
+            <h4 class="card__title u-accent">Class Guides</h4>
+            <p class="card__text">
+              Icy Veins provides comprehensive class guides covering talents, rotations, and gear.</p>
+          </article>
+
+          <article class="card card--gutter card--centered is-link is-mouseover" role="link" tabindex="0"
+            data-href="https://www.wowhead.com/guides/dungeons"
+          >
+            <h4 class="card__title u-accent">Dungeon Guides</h4>
+            <p class="card__text">
+              Wowhead features detailed dungeon guides with pull maps, interrupts, and video walkthroughs.</p>
+          </article>
+
+          <article class="card card--gutter card--centered is-link is-mouseover" role="link" tabindex="0"
+            data-href="https://www.method.gg/guides#mythic-plus-guides"
+          >
+            <h4 class="card__title u-accent">Mythic+ Guides</h4>
+            <p class="card__text">
+              Method delivers precise Mythic+ guides covering affixes, timers, and optimized routes.</p>
+          </article>
         </div>
 
       </div>
@@ -300,6 +368,7 @@
   <script src="/resources/scripts/footer.js" defer></script>
   <script src="/resources/scripts/misc.js" defer></script>
   <script src="/resources/scripts/raid-form.js" defer></script>
+  <script src="/resources/scripts/raid-stats.js" defer></script>
 </body>
 
 </html>
