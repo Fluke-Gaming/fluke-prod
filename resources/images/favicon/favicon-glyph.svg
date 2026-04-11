@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 16.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3cae49;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #192026;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <g>
+      <rect class="cls-2" x="5.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-2" x="5.25" y="3.25" width="1" height="1"/>
+      <rect class="cls-2" x="3.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-2" x="4.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-2" x="5.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-2" x="3.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-2" x="4.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-2" x="5.25" y="12.25" width="1" height="1"/>
+      <rect class="cls-2" x="5.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-2" x="5.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-2" x="10.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-2" x="10.25" y="12.25" width="1" height="1"/>
+      <rect class="cls-2" x="10.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-2" x="11.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-2" x="12.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-2" x="12.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-2" x="11.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-2" x="10.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-2" x="10.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-2" x="10.25" y="3.25" width="1" height="1"/>
+      <rect class="cls-1" x="13.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-1" x="13.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-1" x="12.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-1" x="11.25" y="12.25" width="1" height="1"/>
+      <rect class="cls-1" x="11.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-1" x="11.25" y="13.25" width="1" height="1"/>
+      <rect class="cls-1" x="10.25" y="13.25" width="1" height="1"/>
+      <rect class="cls-1" x="13.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="12.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="13.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="12.25" width="1" height="1"/>
+      <rect class="cls-1" x="5.25" y="13.25" width="1" height="1"/>
+      <rect class="cls-1" x="4.25" y="12.25" width="1" height="1"/>
+      <rect class="cls-1" x="4.25" y="13.25" width="1" height="1"/>
+      <rect class="cls-1" x="2.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-1" x="2.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-1" x="3.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-1" x="4.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="13.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="12.25" width="1" height="1"/>
+      <rect class="cls-1" x="3.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="2.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="13.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="13.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-1" x="13.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-1" x="12.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="12.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-1" x="11.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="11.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="11.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-1" x="11.25" y="3.25" width="1" height="1"/>
+      <rect class="cls-1" x="11.25" y="2.25" width="1" height="1"/>
+      <rect class="cls-1" x="10.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="10.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="10.25" y="2.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="3.25" width="1" height="1"/>
+      <rect class="cls-1" x="9.25" y="2.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="11.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="10.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="3.25" width="1" height="1"/>
+      <rect class="cls-1" x="6.25" y="2.25" width="1" height="1"/>
+      <rect class="cls-1" x="5.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="5.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="5.25" y="2.25" width="1" height="1"/>
+      <rect class="cls-1" x="4.25" y="9.25" width="1" height="1"/>
+      <rect class="cls-1" x="4.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="4.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-1" x="4.25" y="3.25" width="1" height="1"/>
+      <rect class="cls-1" x="4.25" y="2.25" width="1" height="1"/>
+      <rect class="cls-1" x="3.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="3.25" y="4.25" width="1" height="1"/>
+      <rect class="cls-1" x="2.25" y="6.25" width="1" height="1"/>
+      <rect class="cls-1" x="2.25" y="5.25" width="1" height="1"/>
+      <rect class="cls-1" x="2.25" y="4.25" width="1" height="1"/>
+    </g>
+  </g>
+</svg>

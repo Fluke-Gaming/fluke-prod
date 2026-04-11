@@ -116,11 +116,11 @@ async function loadWCLLastRaid() {
         total:      5,
         totalWipes: 18,
         bosses: [
-          { name: "Imperator Averzian",      kill: true,  bestPull: null },
-          { name: "Vorasius",                kill: true,  bestPull: null },
-          { name: "Fallen-King Salhadaar",   kill: true,  bestPull: null },
-          { name: "Vaelgor & Ezzorak",       kill: false, bestPull: 1   },
-          { name: "Chimaerus, the Undreamt God", kill: true, bestPull: null },
+          { name: "Imperator Averzian",         kill: true,  bestPull: null },
+          { name: "Vorasius",                   kill: true,  bestPull: null },
+          { name: "Fallen-King Salhadaar",      kill: true,  bestPull: null },
+          { name: "Vaelgor & Ezzorak",          kill: false, bestPull: 1   },
+          { name: "Chimaerus, the Undreamt God", kill: true,  bestPull: null },
         ]
       };
 

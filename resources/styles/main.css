@@ -62,6 +62,11 @@ button {
     flex: 1;
 }
 
+.site__main--submenu {
+    padding-top: 100px;
+    flex: 1;
+}
+
 body.full {
     height: 100%;
     overflow: hidden;
