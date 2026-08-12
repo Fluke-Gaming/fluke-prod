@@ -124,6 +124,10 @@
     grid-column: 2;
 }
 
+.grid--stretch {
+    grid-column: 1 / 2 span;
+}
+
 /* =========================
    Card Block
 ========================= */

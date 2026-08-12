@@ -56,7 +56,7 @@ fetch('/navbar.html')
     // Here: is the current page one of the submenu pages?
     const showSubmenu = submenuPages.some(p => currentPath === normalizePath(p));
 
-    if (submenu) {
+    if (showSubmenu) {
       // toggle(className, force): when force is a boolean,
       // true = add the class, false = remove it. Replaces an if/else.
       submenu.classList.toggle('nav__submenu--visible', showSubmenu);

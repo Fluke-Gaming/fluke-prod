@@ -142,7 +142,7 @@ async function loadWCLLastRaid() {
     }).join('');
 
     element.innerHTML = `
-      <div class="card__stats">
+      <div class="card__stats card__stats--constrained">
         <h4>Last Raid: ${raidData.date}</h4>
         <p class="card__text"><span class="u-emphasis">${raidData.kills}</span> Kills (H)</p>
         <p class="card__text"><span class="u-emphasis">${raidData.totalWipes}</span> Wipes (H)</p>

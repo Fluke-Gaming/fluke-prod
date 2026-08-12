@@ -95,10 +95,40 @@
     aspect-ratio: 16 / 9;
 }
 
-.card__stream iframe, .card__stream div {
+.card__stream iframe, #stream-player {
     width: 100%;
     height: 100%;
     display: block;
+}
+
+.card__stream .section__subheader::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: var(--color-surface-alt);
+    margin: 1.25rem auto;
+}
+
+.card__thumb {
+    padding: 1rem;
+}
+
+.card__thumb--info {
+    grid-template-columns: 3fr 1fr;
+    margin: auto .5rem;
+}
+
+.card__thumb--thumb {
+    width: 100%;
+}
+
+.card__thumb--title {
+    
+}
+
+.card__thumb--date {
+    text-align: right;
 }
 
 /* =========================

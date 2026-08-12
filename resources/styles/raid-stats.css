@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.card__stats--constrained {
+    width: 100%;
+    max-width: 50ch;
+    margin-inline: auto;
+}
+
 .card__stats p {
     font-variant: small-caps;
 }
